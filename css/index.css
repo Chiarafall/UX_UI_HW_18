@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    overflow: auto;
+}
+a:-webkit-any-link {
+    color: #79595D;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    align-items: center;
+
+}
+
+body {
+    background-color: #E4DDDE;
+    justify-content: center;
+    display:flex
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    line-height: 1.5;
+  }
+
+  .secondary {
+    font-family:raleway, arial, sans-serif;
+    font-size: 38px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #79595D;
+    text-align: center;
+    padding: 3%; 
+    margin-bottom: -8%;
+    margin-top: 3%;
+
+}
+
+p {
+    font-family: anonymous pro, Courier, monospace; 
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    color: #79595D;
+    padding-top: 3%;
+    margin-top: 3%; 
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 3%;
+    text-align: center;
+    
+}
+
+.arrowed-title {
+    font-family: anonymous pro, Courier, monospace; 
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    color: #79595D;
+    padding-top: 3%;
+    padding-bottom: 0%;
+    margin-bottom: 1%;
+    margin-top: 6%;
+    text-align: center;
+}
+.center-arrow {
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projects {
+display: grid;
+
+}/* grid not working */
+
+.button {
+    font-family: anonymous pro, Courier, monospace; 
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: white;
+    width: 160px;
+    padding: 20px;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+  }
+
+  .button:hover{
+  color: #E4DDDE;
+  background-color:#79595D;
+
+  }
+  .button:active{
+    background-color: #F1F1F1;
+    color: #79595D;
+  }
+  .copy-footer {
+    font-family: anonymous pro, Courier, monospace; 
+    font-size: 15px;
+ }
