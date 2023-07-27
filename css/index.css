@@ -1,8 +1,10 @@
 *{
-    margin:0;
-    padding:0;
-    overflow: auto;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
 }
+
+
 a:-webkit-any-link {
     color: #79595D;
     cursor: pointer;
@@ -12,10 +14,14 @@ a:-webkit-any-link {
 
 }
 
+
+
+
 body {
     background-color: #E4DDDE;
-    justify-content: center;
-    display:flex
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -67,18 +73,36 @@ p {
     display:flex;
     margin-left: auto;
     margin-right: auto;
-    width: auto;
-}
-
-.container{
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 450px;
 }
 
 .projects {
-display: grid;
+    max-width: 900px;
+    max-height: 900px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
 
-}/* grid not working */
+}
+
+ /* need to create flippable cards, 
+ showing the content of the project when hovering */
+ 
+ .container {
+    max-width: 450px;
+    max-height: 450px;
+}
+
+.container:hover {
+    color: #E4DDDE;
+}
+
+.AllProjects {
+    display: flex;
+    margin-top: 50px;
+}
 
 .button {
     font-family: anonymous pro, Courier, monospace; 
@@ -90,8 +114,13 @@ display: grid;
     border: none;
     text-align: center;
     display: inline-block;
-    margin: 4px 2px;
   }
+
+  .resume {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
 
   .button:hover{
   color: #E4DDDE;
@@ -105,4 +134,26 @@ display: grid;
   .copy-footer {
     font-family: anonymous pro, Courier, monospace; 
     font-size: 15px;
+    margin-top: 0%;
  }
+
+  .profilePicture {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .profilePicture img {
+ border-radius: 3px
+ }
+
+@media only screen and (max-width: 600px) {
+    .projects {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    max-height: auto;    
+    }
+}
+ /* need to make the rest of the elemets responsive: 
+ right now only the projecst are "stacking" */
+
